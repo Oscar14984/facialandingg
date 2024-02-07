@@ -66,6 +66,31 @@
         </button>
     </div>
 </div>
+
+<!-- DIV DE LAS PREGUNTAS -->
+<div class="preguntas">
+    <div class="card mb-3" >
+        <div class="row g-0">
+            <div class="col-md-4 "> <!-- Añade la clase order-md-1 para controlar el orden en pantallas medianas y grandes -->
+                <img src="img/pregunta.png" class="img-fluid rounded-start img-pregunta" alt="...">
+            </div>
+            <div class="col-md-8 order-md-0"> <!-- Añade la clase order-md-0 para controlar el orden en pantallas medianas y grandes -->
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Preguntas frecuentes Sobre La Toxina botulínica</strong></h5>
+                    <p class="card-text"><i class="bi bi-plus-lg"></i>¿Cuánto tiempo dura el proceso de colocación de toxina botulínica?</p>
+                    <p class="card-text"><i class="bi bi-plus-lg"></i>¿El procedimiento de colocación de toxina botulíca es doloroso?</p>
+                    <p class="card-text"><i class="bi bi-plus-lg"></i>¿Cuáles son los beneficios de la toxina botulíca en comparación con otros procedimientos?</p>
+                    <p class="card-text"><i class="bi bi-plus-lg"></i>¿Quién es un candidato adecuado para toxina botulíca?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- DIV DE CONTACTOS -->
+<div class="contactos">
+    <img src="img/contactos.png" alt="">
+</div>
 </main>
 
 <style>
@@ -96,6 +121,18 @@ background-color: #424242;
 color: white;
 padding-left: 100px;
 padding-right: 100px;
+}
+
+/* ESTILOS DE PREGUNTAS */
+.card-body{
+    margin-left: 100px;
+}
+.img-pregunta{
+    width: 90%;
+}
+.bi-plus-lg{
+color:#F3D3A4;
+font-size: 30px;
 }
 
 
