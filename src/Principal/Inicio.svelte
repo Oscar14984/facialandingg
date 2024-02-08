@@ -1,5 +1,5 @@
 <script>
-
+	import Mapa from './../Componentes/Mapa.svelte';
 </script>
 
 <main>
@@ -91,15 +91,81 @@
 <div class="contactos">
     <img src="img/contactos.png" alt="">
 </div>
+ <!-- Mapa -->
+ <div class="map-forms">
+    <div class="forms">
+      <h1>Contáctanos para Cotizar tu Tratamiento</h1>
+      <div class="contacto">
+        <div class="inputs">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="telefono">
+          </div>
+        </div>
+        <div class="mb-3">
+            <label for="correo" class="form-label">Tratamiento de interes</label>
+            <select class="form-select" aria-label="Default select example" aria-invalid="false" name="Tratamiento">
+                <option value="-">-</option>
+                <option value="Revitalización facial con Plasma Rico en Factores de Crecimiento">Revitalización facial con Plasma Rico en Factores de Crecimiento</option>
+                <option value="Hidratación profunda con ácido Hialurónico">Hidratación profunda con ácido Hialurónico</option>
+                <option value="Toxina botulínica">Toxina botulínica</option>
+                <option value="Rellenos faciales">Rellenos faciales</option>
+                <option value="Modelado facial con ácido hialurónico">Modelado facial con ácido hialurónico</option>
+                <option value="Rellenos labiales">Rellenos labiales</option>
+                <option value="Microneedeling con plasma rico en factores de crecimiento">Microneedeling con plasma rico en factores de crecimiento</option>
+                <option value="Microneedeling con Ácido hialurónico">Microneedeling con Ácido hialurónico</option>
+                <option value="Lipoescultura cervical">Lipoescultura cervical</option>
+                <option value="Bichectomías">Bichectomías</option>
+                <option value="Nano needle">Nano needle</option>
+                <option value="Diseño de sonrisas *">Diseño de sonrisas *</option>
+                <option value="Blanqueamiento dental *">Blanqueamiento dental *</option>
+                <option value="Carillas dentales *">Carillas dentales *</option>
+                <option value="Ortodoncias Invisalign *">Ortodoncias Invisalign *</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="correo" class="form-label">Fecha</label>
+            <input type="date" class="form-control" >
+        </div>
+        <div class="mb-3">
+            <label for="correo" class="form-label">Horario</label>
+            <select class="form-select" aria-invalid="false" name="Horario">
+                <option value="En la mañana">En la mañana</option>
+                <option value="En la tarde">En la tarde</option>
+            </select>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">consulta</label>
+          <textarea class="form-control" id="mensaje" rows="3"></textarea>
+        </div>
+      </div>
+      <button class="btn btn-success">Enviar</button>
+    </div>
+    <div id="map">
+      <Mapa />
+    </div>
+  </div>
 </main>
 
 <style>
 .btn-tra{
     background-color:#F3D3A4;
     color: white;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 100px;
+    margin-top: 40px;
 }
+.img{
+    width: 65%;
+    height: auto;
+}
+img{
+    width: 100%;
+}
+
 /* ESTILOS DE LA SECCION DE COTIZAR */
 .cotiza{
     display: grid;
@@ -135,12 +201,79 @@ color:#F3D3A4;
 font-size: 30px;
 }
 
-
-.img{
-    width: 50%;
-    height: auto;
+/* ESTILOS PARA EL FORMS Y EL MAPA  */
+.map-forms {
+  display: flex;
+  margin-left: 35px;
 }
-img{
-    width: 100%;
+.map-forms h1{
+  margin-left: 20px;
+  border-bottom: #F3D3A4 2px solid;
+}
+
+.forms {
+  flex: 1; 
+}
+
+#map {
+  flex: 1; 
+}
+.forms {
+  flex: 1;
+  padding-right: 20px; 
+}
+
+.contacto {
+  background-color: #f8f9fa; 
+  padding: 20px;
+  border-radius: 10px; 
+}
+
+.form-label {
+  font-weight: bold; 
+}
+
+.form-control {
+  width: 100%; 
+  margin-bottom: 10px; 
+}
+
+textarea.form-control {
+  resize: vertical; 
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* mapa */
+#map { height: 500px; }
+
+@media screen and (max-width: 767px) {
+  .map-forms {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .map-forms h1 {
+    margin-left: 0;
+    width: auto;
+    text-align: center;
+  }
+ 
+  .forms {
+    padding-right: 0;
+  }
+  .contacto {
+    border-radius: 0; 
+  }
+  .form-control {
+    width: calc(100% - 20px); 
+  }
+  .inputs {
+    flex-direction: column; 
+  }
+  
 }
 </style>
