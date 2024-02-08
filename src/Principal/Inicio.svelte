@@ -4,7 +4,7 @@
 
 <main>
 <!-- derecha -->
-<div class="card mb-3" >
+<div class="card card-inicial mb-3" >
     <div class="row g-0">
         <div class="col-md-4 order-md-1"> <!-- Añade la clase order-md-1 para controlar el orden en pantallas medianas y grandes -->
             <img src="img/toxi.png" class="img-fluid rounded-start img" alt="...">
@@ -24,7 +24,7 @@
     </div>
 </div>
 <!-- izquierda -->
-<div class="card mb-3" >
+<div class="card card-inicial mb-3" >
     <div class="row g-0">
         <div class="col-md-4 "> <!-- Añade la clase order-md-1 para controlar el orden en pantallas medianas y grandes -->
             <img src="img/toxi.png" class="img-fluid rounded-start img" alt="...">
@@ -52,8 +52,44 @@
 </div>
 
 <!-- DIV DE BENEFICIOS -->
-<div>
-    <img src="img/beneficios.png" alt="">
+<div class="beneficios">
+    <!-- <img src="img/beneficios.png" alt=""> -->
+    <h2 class="h2-beneficios">Beneficios de La Toxina Botulínica</h2>
+    <p class="p-beneficios">La toxina botulíca, comúnmente conocida por la marca comercial Botox, ofrece varios beneficios como se utiliza con fines estéticos en la 
+        piel.</p>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-3">
+                    <div class="card card-beneficios" style="width: 18rem;">
+                        <h5 class="card-title text-center">reducción de Arrugas y Líneas de Expresión</h5>
+                        <i class="bi bi-person-fill"></i>
+                        <div class="card-body text-beneficio ">
+                            <p class="card-text ">Suavizar las arrugas en la frente, entrecejo y alrededores de los ojos (patas de gallo). La toxina bloquea temporalmente la actividad muscular, lo que resulta en una piel más suave y menos arrugada.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="card card-beneficios" style="width: 18rem;">
+                        <h5 class="card-title text-center">Prevención de Arrugas Futuras</h5>
+                        <i class="bi bi-star-fill"></i>
+                        <div class="card-body text-beneficio ">
+                            <p class="card-text ">Al relajar los músculos responsables de las líneas de expresión, se reduce la tensión repetitiva en la piel. lo que puede prevenir la aparición de arrugas a largo plazo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="card card-beneficios" style="width: 18rem;">
+                        <h5 class="card-title text-center">Tratamiento No Invasivo</h5>
+                        <i class="bi bi-person-fill"></i>
+                        <div class="card-body text-beneficio ">
+                            <p class="card-text ">Las inyecciones son mínimamente dolorosas y no requieren tiempo de recuperación significativo, lo que permite a los pacientes retomar sus actividades diarias casi de inmediato.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
 </div>
 
 <!-- ANUNCIO DE COTIZACION -->
@@ -75,7 +111,7 @@
                 <img src="img/pregunta.png" class="img-fluid rounded-start img-pregunta" alt="...">
             </div>
             <div class="col-md-8 order-md-0"> <!-- Añade la clase order-md-0 para controlar el orden en pantallas medianas y grandes -->
-                <div class="card-body">
+                <div class="card-body card-preguntas">
                     <h5 class="card-title"><strong>Preguntas frecuentes Sobre La Toxina botulínica</strong></h5>
                     <p class="card-text"><i class="bi bi-plus-lg"></i>¿Cuánto tiempo dura el proceso de colocación de toxina botulínica?</p>
                     <p class="card-text"><i class="bi bi-plus-lg"></i>¿El procedimiento de colocación de toxina botulíca es doloroso?</p>
@@ -161,36 +197,81 @@
 .img{
     width: 65%;
     height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 img{
     width: 100%;
 }
-
-/* ESTILOS DE LA SECCION DE COTIZAR */
-.cotiza{
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color:#F3D3A4;
-    padding-top: 40px;
-    padding-bottom: 40px;
+/* Cartas iniciales */
+.card-inicial{
+    border: 0;
 }
-.cotiza h2{
-    margin-left: 200px;
+
+/* ESTILOS DE BENEFICIOS */
+.beneficios, .card-beneficios{
+    background-color: #BDBDBD;
+}
+.h2-beneficios{
+    border-bottom: red 1px solid;
+}
+.h2-beneficios, .p-beneficios{
+    text-align: center;
+    margin: 0 auto;
     color: white;
 }
-.btn-coti{
-    display: flex;
-    align-items: center ;
+.p-beneficios{
+    font-size: 20px;
+    margin-bottom: 20px;
 }
-.btn-cot{
-background-color: #424242;
+.container-fluid{
 color: white;
-padding-left: 100px;
-padding-right: 100px;
+}
+.bi-person-fill, .bi-star-fill{
+    margin-left: 100px;
+    font-size: 50px;
+    color:white;
+}
+.text-beneficio{
+    margin-left: 0px;
+    padding: 0;
+width: 100%;
+}
+.card-beneficios{
+    border: 0;
+    margin-left: 50px;
 }
 
+/* ESTILOS DE LA SECCION DE COTIZAR */
+.cotiza {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #F3D3A4;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center; /* Centra el contenido en dispositivos móviles */
+}
+
+.cotiza h2 {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.btn-coti {
+    display: block; /* Cambia a bloque para ocupar todo el ancho */
+    margin: 0 auto; /* Centra el botón */
+}
+
+.btn-cot {
+    background-color: #424242;
+    color: white;
+    padding: 10px 20px; /* Ajusta el padding para adaptarse mejor en dispositivos móviles */
+    width: 100%; /* Hace que el botón ocupe todo el ancho */
+}
+
+
 /* ESTILOS DE PREGUNTAS */
-.card-body{
+.card-preguntas{
     margin-left: 100px;
 }
 .img-pregunta{
@@ -249,8 +330,7 @@ textarea.form-control {
 
 
 /* mapa */
-#map { height: 500px; }
-
+/* #map { height: 500px; } */
 @media screen and (max-width: 767px) {
   .map-forms {
     flex-direction: column;
@@ -261,10 +341,18 @@ textarea.form-control {
     width: auto;
     text-align: center;
   }
- 
+  
   .forms {
     padding-right: 0;
+    order: 2;
+    margin-bottom: 20px;
   }
+  
+  #map {
+    order: 1; 
+    height: 300px; 
+  }
+  
   .contacto {
     border-radius: 0; 
   }
@@ -274,6 +362,5 @@ textarea.form-control {
   .inputs {
     flex-direction: column; 
   }
-  
 }
 </style>
