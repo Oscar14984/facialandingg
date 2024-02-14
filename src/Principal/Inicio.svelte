@@ -75,7 +75,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 </div>
 
 <!-- DIV DE BENEFICIOS -->
-<div class="beneficios">
+<!-- <div class="beneficios">
     <h2>Beneficios de nuestros servicios:</h2>
     <p>Si quieres cuidar de ti para presentar un aspecto más joven y fresco, afortunadamente hoy en día, existe un gran número de técnicas de rejuvenecimiento facial para eliminar arrugas, redefinir el óvalo de la cara, evitar la flacidez, conseguir una piel más luminosa, entre tantos beneficios:</p>
     <ul>
@@ -97,7 +97,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
         <li><strong>Aumento del brillo y salud bucal en tus dientes, reduciendo la aparición de caries.</strong></li>
         <li><strong>Ahorro en el costo de tratamientos y materiales, gracias a la experiencia y tecnología innovadora que utilizamos.</strong></li>
         </ul>
-</div>
+</div> -->
 </main>
 
 <style>
