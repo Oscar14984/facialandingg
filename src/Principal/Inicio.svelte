@@ -188,11 +188,22 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
     box-shadow: 0 8px 16px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
     padding: 10px;
     margin: 10px;
+    margin-left: 20%;
 }
 
 .card p{
     font-size: 1em;
     line-height: 1.5;
     text-align: justify;
+}
+
+.card:hover{
+	box-shadow:  0 16px 32px 0 rgba(0,0,0,.28), 0 10px 64px -8px rgba(0,0,0,.32);
+    animation: slide-top 0.4s linear both}
+    @keyframes slide-top
+    {0%
+    {transform:translateY(0)}
+    100%{transform:translateY(-30px)
+    }
 }
 </style>

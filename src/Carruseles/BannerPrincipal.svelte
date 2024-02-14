@@ -54,4 +54,21 @@
 .carousel-caption h5{
 font-size: 3rem;
 }
+/* .carousel-caption p {
+    animation: tracking-in-contract 0.9s linear both;
+}
+
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 0.6em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+} */
 </style>
