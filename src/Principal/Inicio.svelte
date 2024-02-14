@@ -74,6 +74,30 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
     </div>
 </div>
 
+<!-- DIV DE BENEFICIOS -->
+<div class="beneficios">
+    <h2>Beneficios de nuestros servicios:</h2>
+    <p>Si quieres cuidar de ti para presentar un aspecto más joven y fresco, afortunadamente hoy en día, existe un gran número de técnicas de rejuvenecimiento facial para eliminar arrugas, redefinir el óvalo de la cara, evitar la flacidez, conseguir una piel más luminosa, entre tantos beneficios:</p>
+    <ul>
+        <li><strong>Más confianza y seguridad al realizar tratamientos con nosotros.</strong></li>
+        <li><strong>Resultados positivos y duraderos, gracias a la experiencia y habilidades de nuestro equipo médico.</strong></li>
+        <li>Contamos con un equipo técnico calificado para brindarte la atención adecuada a tu necesidad.</li>
+        <li>Nuestro equipo está formado por profesionales capacitados para brindarte el mejor cuidado posible.</li>
+        <li>Nuestro equipo está formado por profesionales capacitados para ofrecerte el mejor cuidado personalizado.</li>
+        <li><strong>Resultados positivos y duraderos en el tiempo, gracias a la experiencia y habilidades de nuestro equipo técnico.</strong></li>
+        <li>Nuestro equipo está formado por profesionales capacitados para brindarte el mejor cuidado posible.</li>
+        <li>Nuestro equipo está formado por profesionales capacitados para brindarte el mejor cuidado posible.</li>
+        <li>Contamos con un equipo técnico especializado en la atención médico-quirúrgica, lo cual permite una mayor precisión y eficacia
+        <li>Nuestro equipo está formado por profesionales capacitados para brindarte el mejor cuidado posible.</li>
+        <li><strong>Resultados positivos y duraderos, gracias a la experiencia y habilidades de nuestro equipo técnico.</strong></li>
+        <li>Nuestro equipo está formado por profesionales capacitados para brindarte el mejor cuidado posible, contando con múltiples años de experiencia
+        <li><strong>Resultados positivos y duraderos, gracias a la experiencia y técnicas avanzadas de nuestro equipo.</strong></li>
+        <li><strong>Resultados positivos y duraderos, gracias a la experiencia y habilidades de nuestro equipo técnico.</strong></li>
+        <li>Nuestro equipo está formado por especialistas capacitados para brindarte el mejor cuidado en cada uno de tus tratamientos.</li>
+        <li><strong>Aumento del brillo y salud bucal en tus dientes, reduciendo la aparición de caries.</strong></li>
+        <li><strong>Ahorro en el costo de tratamientos y materiales, gracias a la experiencia y tecnología innovadora que utilizamos.</strong></li>
+        </ul>
+</div>
 </main>
 
 <style>
