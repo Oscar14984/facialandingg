@@ -24,7 +24,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
      </div>   
 <!-- DIV DE TRATAMIENTOS FACIALES -->
 <div class="tratamientos-faciales">
-    <h2>tratamientos Facilaes Revitalización de rostro</h2>
+    <h2>tratamientos Faciales Revitalización de rostro</h2>
     <p>La salud y la seguridad de nuestros clientes siempre ha sido nuestra prioridad número uno y continúa estando a la vanguardia en nuestra mente, ofreciendo a los pacientes algunos de los tratamientos faciales y soluciones para el cuidado de la piel más efectivos y avanzados. Combinar la mejor tecnología con un increíble cuidado de la piel es la forma segura de obtener resultados espectaculares, y esta ha sido nuestra fórmula para el éxito durante.</p>
 </div>
 
@@ -43,6 +43,35 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
     <p>El diseño de la sonrisa es cada vez más importante debido al aumento de pacientes conscientes de la estética. Los pacientes buscan un resultado más natural que se ajuste a su armonía facial y adecuado a su edad, sexo y personalidad al realizar la odontología cosmética. Esto se puede lograr mediante leves rotaciones de los dientes, la translucidez natural o la diferencia de color sobre la superficie del diente, o una textura más caracterizada en la superficie de la cerámica.</p>
     <p>Las hermosas sonrisas ya no se dejan al azar, ya que la tecnología digital se combina con el diseño para crear resultados sorprendentes para los pacientes.</p>
     <p>Conoce los diferentes tipos de diseño de sonrisa que proveemos en La Clínica Facial:</p>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="img-cards/carillas-dentales.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Carillas dentales</h5>
+              <p class="card-text">Las carillas dentales son unos de los tratamientos de mayor demanda en la odontología estética. Mejora considerablemente la apariencia de los dientes de forma muy rápida yresalta la estética del rostro.</p>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="img-cards/blanqueamiento-dental.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Blanqueamiento Dental</h5>
+              <p class="card-text">El blanqueamiento dental es un proceso que consiste en eliminar las manchas de la superficie del diente y restaurar el color natural de los dientes. Es uno de los procedimientos cosméticos más comunes y ampliamente adoptados.</p>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="img-cards/ortodoncia-dental.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ortodoncia Invisaling</h5>
+              <p class="card-text">Ortodoncia Invisaling es un tratamiento de ortodoncia diseñado para mover lentamente los dientes desalineados a la alineación adecuada. Consiste en una serie de bandejas de plástico transparente que se ajustan perfectamente alrededor de los dientes.</p>
+            </div>
+          </div>
+    </div>
 </div>
 
 </main>
@@ -64,6 +93,9 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
   border-bottom: 2px solid #95534E;
   margin-left: 45%;
 }
+.tratamientos-dentales p{
+    text-align: justify;
+}
 
 /* DISEÑO DE TRATAMIENTOS FACIALES */
 .tratamientos-faciales {
@@ -83,6 +115,9 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
   width: 10%; 
   border-bottom: 2px solid #95534E;
   margin-left: 45%;
+}
+.tratamientos-faciales p{
+    text-align: justify;
 }
 /* DISEÑO DE CONTACTOS */
 .contacto {
@@ -124,6 +159,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: justify;
 }
 .diseño-sonrisas h2{
     color: #95534E;
@@ -144,5 +180,19 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 	.diseño-sonrisas h2{
 		width:100%;
 	}
+}
+/* DISEÑO DE LAS CARTAS */
+.card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+    padding: 10px;
+    margin: 10px;
+}
+
+.card p{
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: justify;
 }
 </style>
