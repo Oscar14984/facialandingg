@@ -81,4 +81,7 @@
   .collapse{
     margin-left: 500px;
   }
+  .nav-item a {
+    color: gold;
+  }
 </style>
