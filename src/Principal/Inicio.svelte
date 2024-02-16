@@ -101,6 +101,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
             </div>
         </div>
     </div>
+
 </div>
 
 </main>
