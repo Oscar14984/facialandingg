@@ -352,17 +352,17 @@ ul li::before {
   padding-right: 10px;
 }
 
-@media screen and (max-width: 600px) {
-            .row {
-                display: flex;
-                flex-direction: column;
-            }
-            .col {
-                width: 100%;
-            }
-            .beneficios-img img {
-                max-width: 100%; 
-                height: auto; 
-            }
-        }
+@media (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+    }
+    .beneficios-img img {
+        max-width: 100%; 
+        height: auto; 
+    }
+}
 </style>
