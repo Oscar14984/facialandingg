@@ -134,7 +134,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 }
 
 .tratamientos-dentales h2 {
-    font-size: 30px;
+    font-size: 2rem;
     color: #95534E;
 }
 .tratamientos-dentales h2::after {
@@ -184,6 +184,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 }
 .tratamientos-faciales h2{
     color: #95534E;
+    font-size: 2rem;
 }
 .tratamientos-faciales h2::after {
   content: "";
@@ -225,7 +226,12 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
     .contacto a {
         margin-top: 10px;
     }
-
+@media (max-width: 768px) {
+    .contacto {
+        /* background-size: contain;  */
+        background-attachment: scroll; 
+    }
+}
 /* ESTILO DE DISELO-SONRISAS */
 .diseño-sonrisas{
 	text-align: center;
@@ -265,7 +271,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 }
 .diseño-sonrisas h2{
     color: #95534E;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .diseño-sonrisas h2::after {
   content: "";
@@ -275,15 +281,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
   margin-left: 15%;
 }
 }
-/* @media (min-width:992px) and (max-device-width: 1367px){ 
-	.diseño-sonrisas{
-		flex-wrap: wrap;
-	}
 
-	.diseño-sonrisas h2{
-		width:100%;
-	}
-} */
 /* DISEÑO DE LAS CARTAS */
 .card{
     display: flex;
@@ -317,7 +315,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
     box-shadow: 0 8px 16px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
     padding: 10px;
     margin: 10px;
-    margin-left: 10%;
+    margin-left: 14%;
 }
 
 .card p{
