@@ -250,7 +250,31 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
   margin-left: 45%;
 }
 
-@media (min-width:992px) and (max-device-width: 1367px){ 
+@media (max-width: 768px){
+    .diseño-sonrisas{
+	text-align: center;
+	margin-top:60px;
+    font-family:'Lato', sans-serif;
+}
+.diseño-sonrisas p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 5px 30px 5px 30px;
+}
+.diseño-sonrisas h2{
+    color: #95534E;
+}
+.diseño-sonrisas h2::after {
+  content: "";
+  display: block;
+  width: 70%; 
+  border-bottom: 2px solid #95534E;
+  margin-left: 15%;
+}
+}
+/* @media (min-width:992px) and (max-device-width: 1367px){ 
 	.diseño-sonrisas{
 		flex-wrap: wrap;
 	}
@@ -258,7 +282,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 	.diseño-sonrisas h2{
 		width:100%;
 	}
-}
+} */
 /* DISEÑO DE LAS CARTAS */
 .card{
     display: flex;
