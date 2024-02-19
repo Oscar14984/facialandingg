@@ -79,10 +79,10 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
     <div class="row">
         <div class="col">
             <div class="beneficios-img">
-                <img src="img/tratamientos-faciales.png" alt="">
+                <img src="img/tratamientos-faciales.png" alt="" >
             </div>
         </div>
-        <div class="col">
+        <div class="col bn">
             <div class="contenido-beneficios">
                 <h2>Beneficios de nuestros servicios:</h2>
                 <p>Si quieres cuidar de ti para presentar un aspecto más joven y fresco, afortunadamente hoy en día, existe un gran número de técnicas de rejuvenecimiento facial para eliminar arrugas, redefinir el óvalo de la cara, evitar la flacidez, conseguir una piel más luminosa, entre tantos beneficios:</p>
@@ -265,6 +265,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 }
 .diseño-sonrisas h2{
     color: #95534E;
+    font-size: 3rem;
 }
 .diseño-sonrisas h2::after {
   content: "";
@@ -352,4 +353,18 @@ ul li::before {
   content: ">";
   padding-right: 10px;
 }
+
+@media screen and (max-width: 600px) {
+            .row {
+                display: flex;
+                flex-direction: column;
+            }
+            .col {
+                width: 100%;
+            }
+            .beneficios-img img {
+                max-width: 100%; 
+                height: auto; 
+            }
+        }
 </style>
