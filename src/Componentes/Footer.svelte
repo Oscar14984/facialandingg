@@ -36,10 +36,6 @@
             </div>
         </div>
         
-        
-        
-        
-        
     </footer>
 </main>
 
@@ -54,16 +50,16 @@ footer {
     bottom: 0;
     width: 100%;
     color: white;
-    padding: 20px 0; /* Añade espacio interno arriba y abajo */
+    padding: 20px 0; 
 }
 
 /* Estilos del grid del footer */
 .gridContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Utiliza un grid fluido */
-    gap: 20px; /* Agrega espacio entre las columnas */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 /* Estilos específicos del área de convenios */
@@ -79,14 +75,14 @@ footer {
     display: block;
     margin-bottom: 10px;
     text-decoration: none;
-    color: white; /* Cambia el color de los enlaces */
-    border-bottom: 1px solid #ccc; /* Agrega un borde inferior */
-    padding-bottom: 5px; /* Agrega espacio entre el texto y el borde inferior */
+    color: white; 
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px; 
 }
 
 /* Estilos para el último enlace */
 .convenios a:last-child {
-    margin-bottom: 0; /* Elimina el margen inferior del último enlace */
+    margin-bottom: 0; 
 }
 
 /* Estilos específicos del área de redes sociales */
@@ -97,12 +93,22 @@ footer {
 /* Estilos para los párrafos dentro del footer */
 .container p {
     margin-left: 30px;
-    margin-top: 0; /* Elimina el margen superior predeterminado */
-    margin-bottom: 10px; /* Agrega espacio inferior */
+    margin-top: 0; 
+    margin-bottom: 10px; 
 }
 .btn-redes{
     color: white;
     border: 1px solid white;
 }
 
+@media (max-width: 768px){
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .container img {
+        margin-left: 15%;
+        margin-bottom: 3%;
+    } 
+}
 </style>
