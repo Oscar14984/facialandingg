@@ -13,11 +13,11 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
     <div class="container mt-4">
         <div class="row">
             <!-- Columna de la izquierda -->
-            <div class="col-6 "> 
+            <div class="col-12 col-sm-3"> 
                 <p>En los últimos años se ha normalizado la realización de tratamientos de estética facial en hombres, pasando de ser un tema «tabú» a una opción habitual entre el género masculino.</p>
             </div>
             <!-- Columna de la derecha -->
-            <div class="col-6 ">
+            <div class="col-12 col-sm-3">
                 <p>En la Clínica Facial contamos con tratamientos dentales y faciales específicos para el hombres y la mujer, ya sea para eliminar imperfecciones de la piel como para reducir el impacto del envejecimiento en el rostro.</p>
             </div>
         </div>
@@ -125,6 +125,29 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 }
 .tratamientos-dentales p{
     text-align: justify;
+    padding: 5px 30px 5px 30px;
+}
+
+@media (max-width: 768px) {
+    .tratamientos-dentales {
+    text-align: center;
+}
+
+.tratamientos-dentales h2 {
+    font-size: 30px;
+    color: #95534E;
+}
+.tratamientos-dentales h2::after {
+  content: "";
+  display: block;
+  width: 70%; 
+  border-bottom: 2px solid #95534E;
+  margin-left: 15%;
+}
+.tratamientos-dentales p{
+    text-align: justify;
+    padding: 5px 30px 5px 30px;
+}
 }
 
 /* DISEÑO DE TRATAMIENTOS FACIALES */
@@ -148,6 +171,30 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 }
 .tratamientos-faciales p{
     text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .tratamientos-faciales {
+    margin-top: 5%;
+    padding: 1% 5%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 5px 15px;
+    text-align: center;
+}
+.tratamientos-faciales h2{
+    color: #95534E;
+}
+.tratamientos-faciales h2::after {
+  content: "";
+  display: block;
+  width: 80%; 
+  border-bottom: 2px solid #95534E;
+  margin-left: 10%;
+}
+.tratamientos-faciales p{
+    text-align: justify;
+}
 }
 /* DISEÑO DE CONTACTOS */
 .contacto {
@@ -190,6 +237,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
     justify-content: center;
     align-items: center;
     text-align: justify;
+    padding: 5px 30px 5px 30px;
 }
 .diseño-sonrisas h2{
     color: #95534E;
@@ -235,6 +283,33 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
     {transform:translateY(0)}
     100%{transform:translateY(-30px)
     }
+}
+
+@media (max-width: 768px){
+    .card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+    padding: 10px;
+    margin: 10px;
+    margin-left: 10%;
+}
+
+.card p{
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.card:hover{
+	box-shadow:  0 16px 32px 0 rgba(0,0,0,.28), 0 10px 64px -8px rgba(0,0,0,.32);
+    animation: slide-top 0.4s linear both}
+    @keyframes slide-top
+    {0%
+    {transform:translateY(0)}
+    100%{transform:translateY(-30px)
+    }
+} 
 }
 
 /* DISEÑO DE BIENESTAR */
