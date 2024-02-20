@@ -7,28 +7,28 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="img-banners/tratamientos-faciales-1.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-none d-sm-block">
                 <h5>ÁCIDO HIALURÓNICO</h5>
                 <p>Mejora la calidad de la piel. Disminuye las arrugas finas, consigue un efecto aumentado colágeno y elastina.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img-banners/tratamientos-faciales-2.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-none d-sm-block">
                 <h5>NANO NEEDLE</h5>
                 <p>Aumenta la absorción de nutrientes de la piel para lucirla con mayor hidratación.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img-banners/tratamientos-faciales-3.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-none d-sm-block">
                 <h5>TOXINA BOTULÍNICA</h5>
                 <p>Nuestra Clínica Facial de cuidado de la piel trata a cada cliente, hombre o mujer, con la mejor atención.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img-banners/tratamientos-faciales-4.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-none d-sm-block">
                 <h5>DISEÑO DE SONRISAS</h5>
                 <p>Transforma tu sonrisa con nuestros tratamientos de diseño de sonrisas y complementa tu tratamiento facial.</p>
             </div>
@@ -53,6 +53,18 @@
 }
 .carousel-caption h5{
 font-size: 3rem;
+}
+.carousel-item img {
+  object-fit: cover; 
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 14px; 
+  }
+  .carousel-caption h5 {
+    margin-bottom: 5px; 
+  }
 }
 /* .carousel-caption p {
     animation: tracking-in-contract 0.9s linear both;

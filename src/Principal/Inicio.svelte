@@ -44,7 +44,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
     <p>Las hermosas sonrisas ya no se dejan al azar, ya que la tecnología digital se combina con el diseño para crear resultados sorprendentes para los pacientes.</p>
     <p>Conoce los diferentes tipos de diseño de sonrisa que proveemos en La Clínica Facial:</p>
 </div>
-<div class="row">
+<div class="row cartas-row">
     <div class="col">
         <div class="card" style="width: 18rem;">
             <img src="img-cards/carillas-dentales.png" class="card-img-top" alt="..." />
@@ -291,6 +291,9 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 }
 
 /* DISEÑO DE LAS CARTAS */
+.cartas-row{
+margin: 10px 200px 10px 200px ;
+}
 .card{
     display: flex;
     flex-direction: column;
@@ -317,6 +320,9 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 }
 
 @media (max-width: 768px){
+    .cartas-row{
+    margin: 10px 100px 10px 10px ;
+    }
     .card{
     display: flex;
     flex-direction: column;
@@ -347,6 +353,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 .beneficios{
     padding: 5%;
     margin-top: 5%;
+    margin:10px 100px 10px 100px;
 }
 .beneficios h2{
     color: #95534E;
@@ -361,6 +368,9 @@ ul li::before {
 }
 
 @media (max-width: 768px) {
+    .beneficios{
+        margin:10px 10px 10px 10px;
+    }
     .row {
         display: flex;
         flex-direction: column;
