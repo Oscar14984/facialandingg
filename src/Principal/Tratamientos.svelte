@@ -236,7 +236,8 @@
     
        h5{
         font-weight: bold;
-        border-bottom: 3px #282828 solid;
+        color: #95534E;
+        border-bottom: 3px #95534E solid;
         width: 300px;
        }
        .img-reducir{
