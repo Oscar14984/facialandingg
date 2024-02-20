@@ -119,13 +119,16 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 .tratamientos-dentales h2::after {
   content: "";
   display: block;
-  width: 10%; 
+  width: 20%; 
   border-bottom: 2px solid #95534E;
-  margin-left: 45%;
+  margin-left: 40%;
 }
 .tratamientos-dentales p{
     text-align: justify;
     padding: 5px 30px 5px 30px;
+}
+.container{
+    margin-left: 30%;
 }
 
 @media (max-width: 768px) {
@@ -148,6 +151,9 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
     text-align: justify;
     padding: 5px 30px 5px 30px;
 }
+.container{
+    margin-left: 3%;
+}
 }
 
 /* DISEÑO DE TRATAMIENTOS FACIALES */
@@ -165,9 +171,9 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 .tratamientos-faciales h2::after {
   content: "";
   display: block;
-  width: 10%; 
+  width: 30%; 
   border-bottom: 2px solid #95534E;
-  margin-left: 45%;
+  margin-left: 35%;
 }
 .tratamientos-faciales p{
     text-align: justify;
@@ -251,9 +257,9 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 .diseño-sonrisas h2::after {
   content: "";
   display: block;
-  width: 10%; 
+  width: 13%; 
   border-bottom: 2px solid #95534E;
-  margin-left: 45%;
+  margin-left: 43%;
 }
 
 @media (max-width: 768px){
