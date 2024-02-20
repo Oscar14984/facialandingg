@@ -206,9 +206,6 @@ img{
 .card-inicial{
     border: 0;
 }
-.carta1{
-    
-}
 
 /* ESTILOS DE BENEFICIOS */
 .beneficios, .card-beneficios{
