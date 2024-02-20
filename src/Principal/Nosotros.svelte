@@ -7,8 +7,12 @@
         <img src="img/nosotros.jpg" alt="">
         <div class="texto-superpuesto"><p>Quienes Somos</p></div>
     </div>
-    <div class="contenido">
-
+    <div class="contenido-facial">
+        <img src="img/facial.jpg" alt="">
+        <p></p>
+    </div>
+    <div class="tratamiento-facial">
+        <img src="img/Tratamiento-facial.jpg" alt="">
     </div>
 </main>
 
