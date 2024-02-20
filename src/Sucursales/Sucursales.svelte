@@ -29,6 +29,9 @@ import {link} from 'svelte-spa-router'
             <div class="col-6 col-md-4 col-lg-3">
                 <img src="img-sucursales/IMG_4542.png" alt="" class="img-fluid">
             </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="img-sucursales/IMG_4543.png" alt="" class="img-fluid">
+            </div>
         </div>
     </div>
     
@@ -95,7 +98,12 @@ img{
     width: 100%;
 }
 .container{
-    margin-left: 18%;
+    margin-left: 8%;
+}
+@media (max-width:768px){
+    .container {
+      margin-left: 0%;
+   }
 }
 /* ESTILLOS DE LAS SUCURSALES */
 .sucursal {
