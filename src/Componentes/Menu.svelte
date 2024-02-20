@@ -7,7 +7,7 @@
 <main>
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <img src="img/logo-la-clinica-dental-oscuro.png" alt="">
+          <img src="img-logos/perfil-facebook_fondo negro.png" alt="">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -74,7 +74,6 @@
     top: 0;
     width: 100%;
     background-color: rgba(40, 40, 40, 0.5);
-    /* color: white; */
     text-align: center;
     z-index: 1;
   }
@@ -83,5 +82,20 @@
   }
   .nav-item a {
     color: gold;
+  }
+  .container-fluid img{
+    width: 5%;
+  }
+  @media (max-width: 768px) {
+    .collapse{
+    margin-left: 0px;
+  }
+  .container-fluid img{
+    width: 10%;
+  }
+  .llamada{
+    margin-top: 15px;
+    margin-right: 100px;
+  }
   }
 </style>

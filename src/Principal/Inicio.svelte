@@ -125,7 +125,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 }
 .tratamientos-dentales p{
     text-align: justify;
-    padding: 5px 30px 5px 30px;
+    padding: 5px 20% 5px 20%;
 }
 .container{
     margin-left: 30%;
@@ -177,6 +177,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 }
 .tratamientos-faciales p{
     text-align: justify;
+    padding: 5px 20% 5px 20%;
 }
 
 @media (max-width: 768px) {
@@ -201,6 +202,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 }
 .tratamientos-faciales p{
     text-align: justify;
+    padding: 5px 30px 5px 30px;
 }
 }
 /* DISEÑO DE CONTACTOS */
@@ -249,7 +251,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
     justify-content: center;
     align-items: center;
     text-align: justify;
-    padding: 5px 30px 5px 30px;
+    padding: 5px 20% 5px 20%;
 }
 .diseño-sonrisas h2{
     color: #95534E;
