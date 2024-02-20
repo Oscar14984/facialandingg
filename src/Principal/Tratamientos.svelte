@@ -243,7 +243,7 @@
        .img-reducir{
         width: 200px !important; 
         height: auto;
-       margin-left: 100px;
+       margin-left: 200px !important;
        }
        .btn-tra{
         background-color:#282828 ;
@@ -273,5 +273,8 @@
             -ms-flex-order: 1;
             order: 1;
         }
+        .img-reducir{
+        margin-left: 70px !important;
+       }
     }
     </style>
