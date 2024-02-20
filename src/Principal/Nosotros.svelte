@@ -5,7 +5,10 @@
 <main>
     <div class="nosotros">
         <img src="img/nosotros.jpg" alt="">
-        <div class="texto-superpuesto">Quienes Somos</div>
+        <div class="texto-superpuesto"><p>Quienes Somos</p></div>
+    </div>
+    <div class="contenido">
+
     </div>
 </main>
 
@@ -26,7 +29,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 24px;
+        font-size: 40px;
         font-weight: bold;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
