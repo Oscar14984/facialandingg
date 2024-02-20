@@ -3,7 +3,10 @@
 const pushInicio = () =>{
   push("/")
 }
- 
+const llamar = () => {
+        window.location.href = 'tel:5588547122';
+    }
+
 
 </script>
 
@@ -31,7 +34,7 @@ const pushInicio = () =>{
                 <a class="nav-link" use:link href="/Contacto">Contáctanos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="!#">Nosotros</a>
+                <a class="nav-link" use:link href="/Nosotros">Nosotros</a>
               </li>
               <li class="nav-item">
                 <!-- <a class="nav-link" use:link href="/Contactanos">CONTÁCTANOS</a> -->
@@ -42,7 +45,7 @@ const pushInicio = () =>{
                 <i class="bi bi-whatsapp"></i>
                 Cotiza tu Tratamiento
             </button>
-            <button class="btn llamada">
+            <button class="btn llamada" on:click={llamar}>
                 <i class="bi bi-telephone"></i>
                 Llámanos
             </button>

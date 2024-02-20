@@ -96,6 +96,10 @@ footer {
     margin-top: 0; 
     margin-bottom: 10px; 
 }
+
+.container img{
+    margin-left: 50px;
+}
 .btn-redes{
     color: white;
     border: 1px solid white;
