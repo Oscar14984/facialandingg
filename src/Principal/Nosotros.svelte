@@ -13,6 +13,9 @@
     </div>
     <div class="tratamiento-facial">
         <img src="img/Tratamiento-facial.jpg" alt="">
+        <div><h2>La Clínica Facial</h2></div>
+        <div><p>La Clínica Facial, está conformada por un grupo de doctores especializados en tratamientos estéticos y dentales, preocupados por el bienestar y la salud de la sociedad Colombiana. Ofrecemos alternativas con tecnología de punta para garantizar la calidad de nuestro servicio.</p></div>
+        
     </div>
 </main>
 
