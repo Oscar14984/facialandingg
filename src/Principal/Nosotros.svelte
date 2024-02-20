@@ -1,6 +1,10 @@
 <script>
 	import Tratamientos from './Tratamientos.svelte';
 
+const abrirWhats = () =>{
+    window.open('https://api.whatsapp.com/send/?phone=5215515101285&text=%C2%A1Hola%21+Quiero+agendar+una+Cita+de+Valoraci%C3%B3n+en+La+Cl%C3%ADnica+Dental+Coapa&type=phone_number&app_absent=0', '_blank');
+}
+
 </script>
 
 <main>
@@ -32,7 +36,7 @@
         </div>
     </div>
 
-    <button class="btn agenda">
+    <button class="btn agenda" on:click={abrirWhats}>
         <i class="bi bi-whatsapp"></i>
         Cotiza tu Tratamiento
     </button>
@@ -160,6 +164,25 @@
 .agenda{
     margin: 10px 50px 20px 100px;
 }
+}
+
+/* Estilos para dispositivos más grandes, como monitores */
+@media (min-width: 768px) {
+    .linea-roja, .linea-roja-trata  {
+        width: 100px; 
+        height: 2px; 
+        background-color: #93504A; 
+        margin-bottom: 10px; 
+        margin-left: 0; 
+    }
+
+    .agenda {
+        margin: 10px 100px 20px 700px; 
+    }
+    .contenido-facial, .tratamiento-facial {
+        /* display: block; */
+        margin: 50px 350px 10px 360px ; 
+    }
 }
 
 </style>

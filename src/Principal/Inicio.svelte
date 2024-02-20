@@ -1,5 +1,10 @@
 <script>
 import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
+
+const abrirWhats = () =>{
+    window.open('https://api.whatsapp.com/send/?phone=5215515101285&text=%C2%A1Hola%21+Quiero+agendar+una+Cita+de+Valoraci%C3%B3n+en+La+Cl%C3%ADnica+Dental+Coapa&type=phone_number&app_absent=0', '_blank');
+}
+
 </script>
 
 <main>
@@ -32,7 +37,7 @@ import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 <div class="contacto">
     <div class="contacto-contenido">
         <p><strong>¿Tienes alguna pregunta? ¿Necesitas una cita? ¡No dudes en contactarnos!</strong></p>
-        <a href="/Contactanos" class="btn btn-success">¡Contáctanos!</a>
+        <button class="btn btn-success" on:click={abrirWhats}>¡Contáctanos!</button>
     </div>
 </div>
 
