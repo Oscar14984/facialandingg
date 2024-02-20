@@ -28,7 +28,7 @@ const pushInicio = () =>{
                 <a class="nav-link" use:link href="/Sucursales">Sucursales</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="!#">Contáctanos</a>
+                <a class="nav-link" use:link href="/Contacto">Contáctanos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="!#">Nosotros</a>
