@@ -2,7 +2,7 @@
 import BannerPrincipal from "../Carruseles/BannerPrincipal.svelte";
 
 const abrirWhats = () =>{
-    window.open('https://api.whatsapp.com/send/?phone=5215515101285&text=%C2%A1Hola%21+Quiero+agendar+una+Cita+de+Valoraci%C3%B3n+en+La+Cl%C3%ADnica+Dental+Coapa&type=phone_number&app_absent=0', '_blank');
+    window.open('https://api.whatsapp.com/send/?phone=5215574231843&text=%21Hola+me+comunico+de+la+p%C3%A1gina+La+Cl%C3%ADnica+Facial+deseo+m%C3%A1s+informaci%C3%B3n%21&type=phone_number&app_absent=0', '_blank');
 }
 
 </script>

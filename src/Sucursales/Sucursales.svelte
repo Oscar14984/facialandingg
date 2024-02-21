@@ -13,13 +13,13 @@ const abrirMapaRoma = () =>{
         <div class="polanco">
             <p>Sucursal La Clínica Dental Polanco</p>
             <div class="map-link">
-                <button class="btn" on:click={abrirMapaPolanco}>Ver en el mapa</button>
+                <button class="btn btn-success btn-mapa" on:click={abrirMapaPolanco}>Ver en el mapa</button>
             </div>
         </div>
         <div class="roma">
             <p>Sucursal La Clínica Dental Roma</p>
             <div class="map-link">
-                <button class="btn" on:click={abrirMapaRoma}>Ver en el mapa</button>
+                <button class="btn btn-success btn-mapa" on:click={abrirMapaRoma}>Ver en el mapa</button>
             </div>
         </div>
     </div>
@@ -99,7 +99,15 @@ const abrirMapaRoma = () =>{
 </main>
 
 <style>
+  /* ESTOLOS DE LOS BOTONES PARA VER MAPA */
+  .btn-mapa{
+    color: white;
+  }
+  .btn-mapa:hover{
+    color: black;
+  }
 
+/* ESTILO DEL CONTAINER */
 img{
     width: 100%;
 }
