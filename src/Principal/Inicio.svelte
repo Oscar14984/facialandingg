@@ -236,9 +236,9 @@ const abrirWhats = () =>{
         font-size: 1.2rem; 
     }
 
-    .contacto a {
+    /* .contacto a {
         margin-top: 10px;
-    }
+    } */
 @media (max-width: 768px) {
     .contacto {
         /* background-size: contain;  */
