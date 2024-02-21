@@ -1,5 +1,11 @@
 <script>
 import {link} from 'svelte-spa-router'
+const abrirMapaPolanco = () =>{
+  window.open("https://maps.app.goo.gl/3zkeePZWpBm99c6U6" , "_blank");
+}
+const abrirMapaRoma = () =>{
+  window.open("https://maps.app.goo.gl/wpYU5mBXp6XTELgb9", "_blank")
+}
 </script>
 
 <main>
@@ -7,13 +13,13 @@ import {link} from 'svelte-spa-router'
         <div class="polanco">
             <p>Sucursal La Clínica Dental Polanco</p>
             <div class="map-link">
-                <a use:link href="https://maps.app.goo.gl/9y6E8KYfjwCD5XZW8" target="_blank">Ver en el mapa</a>
+                <button class="btn" on:click={abrirMapaPolanco}>Ver en el mapa</button>
             </div>
         </div>
         <div class="roma">
             <p>Sucursal La Clínica Dental Roma</p>
             <div class="map-link">
-                <a use:link href="https://maps.app.goo.gl/wpYU5mBXp6XTELgb9" target="_blank">Ver en el mapa</a>
+                <button class="btn" on:click={abrirMapaRoma}>Ver en el mapa</button>
             </div>
         </div>
     </div>

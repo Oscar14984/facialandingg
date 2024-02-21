@@ -9,6 +9,7 @@ const pushInicio = () =>{
     const abrirWhats = () =>{
         window.open('https://api.whatsapp.com/send/?phone=5215515101285&text=%C2%A1Hola%21+Quiero+agendar+una+Cita+de+Valoraci%C3%B3n+en+La+Cl%C3%ADnica+Dental+Coapa&type=phone_number&app_absent=0', '_blank');
     }
+   
 
 
 </script>
